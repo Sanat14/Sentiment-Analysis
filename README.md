@@ -50,3 +50,14 @@ pip install torch==2.5.1+cu121 torchvision torchaudio --index-url https://downlo
 pip install -r requirements_bert.txt
 ```
 
+### Note 
+
+if you wish to run the project locally :
+
+-  Data has been uploaded in chunks (due to github file size limit) so please change up the code to read in data files accordingly in all 3 notebooks : **cleaning**, **modelling** and **bert_model**
+
+-  To run the custom transformer model, please install the pre-trained glove vector from here : https://nlp.stanford.edu/data/glove.6B.zip
+
+-  Ensure you have a decent GPU to run the code for fine-tuning BERT model (**bert_model.ipynb**) as it may take a lot longer otherwise
+
+
